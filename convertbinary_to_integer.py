@@ -22,4 +22,22 @@ class Solution:
                 c=c-1
                 temp=temp.next
         return res
-        
+
+#another way of doing
+ans=0
+        while head:
+            ans=ans*2+head.val
+            head=head.next
+        return ans
+101
+ans=0
+0*2
+0+1  --->1st
+
+1*2
+2+0 ---->2ndpos
+
+2*2
+4+1 ----->3rdpos
+
+5
