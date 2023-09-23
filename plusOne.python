@@ -1,0 +1,27 @@
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        
+        l=len(digits)
+        total=0
+        res=[]
+        if l==1:
+            if digits[0]==9:
+                digits[0]=1
+                digits.append(0)
+                return digits
+            else:
+                digits[0]+=1
+                return digits
+
+        else:
+    
+            for i in range(l):
+                total=total*10+digits[i]
+            total+=1
+            print(total)
+            total=str(total)
+            for j in total:
+                res.append(int(j))
+        return res
+
+
